@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 168, 90);
+}
+.first{
+    position: absolute;
+    opacity: 1;
+    top: 0px;
+    left: 32%;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+.first:hover {
+    opacity: 0;
+}
+.second{
+    position: absolute;
+    opacity: 0;
+    top: 50px;
+    left: 40%;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.first:hover + .second {
+    opacity: 1;
+}
+
+.wassup{
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+    left: 100px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.wassup:hover {
+    opacity: 1;
+}
+.what{
+    position: absolute;
+    opacity: 0;
+    top: 300px;
+    left: 200px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.what:hover {
+    opacity: 1;
+}
+.why{
+    position: absolute;
+    opacity: 0;
+    top: 400px;
+    right: 100px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.why:hover {
+    opacity: 1;
+}
+.how{
+    position: absolute;
+    opacity: 0;
+    top: 200px;
+    right: 100px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.how:hover {
+    opacity: 1;
+}
+.dont{
+    position: absolute;
+    opacity: 0;
+    top: 500px;
+    left: 50px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.dont:hover {
+    opacity: 1;
+}
+  
+.square{
+    position: absolute;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 20px;
+    animation: bouncebox 1s ease-in infinite alternate;
+}
+.shadow{
+    position: absolute;
+    left: 45%;
+    width: 100px;
+    height: 20px;
+    background: #000000;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: shadow 1s ease-in infinite alternate;
+}
+.square:hover{
+    animation-play-state: paused;
+}
+.square:hover + .shadow{
+    animation-play-state: paused;
+}
+
+@media only screen and (max-width: 600px){
+    .square{
+        position: absolute;
+        left: 42%;
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+    }
+    .shadow{
+        position: absolute;
+        left: 42%;
+        width: 80px;
+        height: 10px;
+        opacity: 0.5;
+        border-radius: 50%;
+    }
+    .first{
+        position: absolute;
+        top: 0px;
+        left: 20%;
+        font-size: 20px;
+    }
+    .second{
+        position: absolute;
+        top: 20px;
+        left: 23%;
+        font-size: 20px;
+    }
+    .wassup{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        font-size: 20px;
+    }
+    .what{
+        position: absolute;
+        top: 300px;
+        left: 25px;
+        font-size: 20px;
+    }
+    .dont{
+        position: absolute;
+        top: 550px;
+        left: 10px;
+        font-size: 20px;
+    }
+    .how{
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        font-size: 20px;
+    }
+    .why{
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        font-size: 20px;
+    }
+}
+
+@keyframes bouncebox{
+    0%{
+        margin-top: 150px;
+        transform: rotate(45deg);
+    }
+    100%{
+        margin-top: 350px;
+        transform: rotate(550deg);
+    }
+}
+
+@keyframes shadow{
+    0%{
+        margin-top: 480px;
+        transform: scale(1) rotateX(45deg) rotateZ(0deg);
+    }
+    100%{
+        margin-top: 480px;
+        transform: scale(2) rotateX(45deg) rotateZ(0deg);
+    }
+}
